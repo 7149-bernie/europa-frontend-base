@@ -9,10 +9,10 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true, // originally: true
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": true, // originally: true
     "jsx": "react-jsx",
 
     /* Linting */
@@ -21,7 +21,18 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Type declaration */
+    // "declaration": true,
+    // "declarationDir": "dist/types",
+    // "declarationMap": false,
+    // "emitDeclarationOnly": true, // false -> writes the type .d.ts files ; true -> writes the main code files
+
+    /* Additional configuration */
+    // "diagnostics": false,
+    // "outDir": "dist",
   },
-  "include": ["src"]
+  "include": ["src", "lib"] // alternative: ["src/**/*.ts", "test/**/*.ts"]
+  // originally: "include": ["src", "lib"] // alternative: ["src/**/*.ts", "test/**/*.ts"]
 }
