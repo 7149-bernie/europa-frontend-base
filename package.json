@@ -1,13 +1,15 @@
 {
   "name": "europa-frontend-base",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
-  "types": "dist/index.d.ts",
-  "module": "dist/europa-frontend-base.es.js",
   "main": "dist/europa-frontend-base.cjs.js",
+  "module": "dist/europa-frontend-base.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
+      "import": "./dist/europa-frontend-base.es.js",
+      "require": "./dist/europa-frontend-base.cjs.js",
       "types": "./dist/index.d.ts"
     }
   },
