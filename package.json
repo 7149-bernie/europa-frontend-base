@@ -4,23 +4,24 @@
   "version": "0.0.3",
   "type": "module",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "default": "./dist/index.d.ts"
+      }
+    }
+  },
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
-  "exports": {
-    ".": {
-      "import": "dist"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "git-push": "git add * && git commit -m \"unnamed\" && git push",
-    "publish": "npm run build && npm run git-push && npm version patch && npm publish"
+    "git-push": "git add * && git commit -m \"unnamed\" && git push"
   },
   "dependencies": {
     "@types/node": "^24.0.10"
