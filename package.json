@@ -19,7 +19,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "git-push": "git add * && git commit -m \"unnamed\" && git push"
+    "git-push": "git add * && git commit -m \"unnamed\" && git push",
+    "publish": "npm run build && npm run git-push && npm version patch && npm publish"
   },
   "dependencies": {
     "@types/node": "^24.0.10"
