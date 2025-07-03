@@ -4,6 +4,8 @@
   "version": "0.0.4",
   "type": "module",
   "types": "dist/index.d.ts",
+  "module": "dist/europa-frontend-base.es.js",
+  "main": "dist/europa-frontend-base.cjs.js",
   "exports": {
     ".": {
       "types": {
